@@ -41,16 +41,19 @@ import java.util.Scanner;
 //         Integer n = iScanner.nextInt();
 //         Integer m = iScanner.nextInt();
 
-//         method(n,m);  
+//         boolean result = method(n,m);
+//         System.out.println(result);
 //     }  
         
-//     private static void method(int x, int y) {
+//     private static boolean method(int x, int y) {
 //         int sum = x+y;
 //         if (sum<=20 && sum >= 10){
-//             System.out.println(true);
+//             // System.out.println(true);
+//             return true;
 //         }
 //         else{
-//             System.out.println(false);
+//             // System.out.println(false);
+//             return false;
 //         }   
 //     }   
 // }    
@@ -61,8 +64,6 @@ import java.util.Scanner;
 //     public static void main(String[] args) {
 //         Scanner iScanner = new Scanner(System.in);
 //         Integer n = iScanner.nextInt();
-            
-
 //         method(n);  
 //     } 
 //     private static void method(int x) {
@@ -75,3 +76,47 @@ import java.util.Scanner;
 //     }      
 // }
 
+// 4.Написать метод, которому в качестве параметра передается целое число. 
+// Метод должен вернуть true, если число отрицательное, и вернуть false если положительное.
+
+// public class program{
+//     public static void main(String[] args) {
+//         Scanner iScanner = new Scanner(System.in);
+//         Integer n = iScanner.nextInt();
+                
+    
+//         boolean result = method(n);
+//         System.out.println(result); 
+//     } 
+//     private static boolean method(int x) {
+//         if (x>=0){
+//                 return false; 
+//         }   
+//         else{
+//             return true; 
+//         }                     
+//     }      
+// }
+// 5.Написать метод, которому в качестве аргументов передается строка и число, 
+// метод должен отпечатать в консоль указанную строку, указанное количество раз;
+
+// public class program{
+//     public static void main(String[] args) {
+//         Scanner iScanner = new Scanner(System.in);
+//         System.out.println("Строка: ");
+//         String m = iScanner.nextLine();
+//         System.out.println("Число: ");
+//         Integer n = iScanner.nextInt();
+        
+//         method(m,n);
+        
+//     }
+//     private static void method(String str, int x) {
+//         int i = 0;
+//         while (i < x){
+//              System.out.println(str);
+//              i++;
+//         }
+        
+//     }   
+// }
