@@ -1,6 +1,6 @@
 //1.Вычислить n-ое треугольного число(сумма чисел от 1 до n), n! (произведение чисел от 1 до n)
 
-import java.util.Scanner;
+// import java.util.Scanner;
 //     public class program{
 //         public static void main(String[] args) {
 //             Scanner iScanner = new Scanner(System.in);
@@ -123,31 +123,71 @@ import java.util.Scanner;
 // 6.Написать метод, который определяет, является ли год високосным, и возвращает boolean (високосный - true, не високосный - false). 
 // Каждый 4-й год является високосным, кроме каждого 100-го, при этом каждый 400-й – високосный
 
-public class program{
-    public static void main(String[] args) {
-        Scanner iScanner = new Scanner(System.in);
-        Integer n = iScanner.nextInt();
+// public class program{
+//     public static void main(String[] args) {
+//         Scanner iScanner = new Scanner(System.in);
+//         Integer n = iScanner.nextInt();
                     
         
-        boolean result = method(n);
-        System.out.println(result); 
-    } 
-    private static boolean method(int x) {
-        if (x%400==0){
-            return true;
-        }
-        else{
-            if (x%100==0){
-                return false;
-            }
-            else{
-                if (x%4==0){
-                    return true;
-                }
-                else{
-                    return false;
-                }
-            }             
-        }                    
-    }      
-}
+//         boolean result = method(n);
+//         System.out.println(result); 
+//     } 
+//     private static boolean method(int x) {
+//         if (x%400==0){
+//             return true;
+//         }
+//         else{
+//             if (x%100==0){
+//                 return false;
+//             }
+//             else{
+//                 if (x%4==0){
+//                     return true;
+//                 }
+//                 else{
+//                     return false;
+//                 }
+//             }             
+//         }                    
+//     }      
+// }
+// 7.Задать целочисленный массив, состоящий из элементов 0 и 1. Например: [ 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 ].
+//  С помощью цикла и условия заменить 0 на 1, 1 на 0;
+// public class program{
+//     public static void main(String[] args) {
+//         int [] array = { 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 };
+//         int[] result = method(array);
+//         System.out.println(result);   
+//     }
+//     private static int[] method(int[] array) {
+//         for (int i = 0; i<array.length; i++){
+//             if (array[i] == 0){
+//                 array[i] = 1;
+//             }
+//             else{
+//                 array[i] = 0;
+//             }
+//         }
+//     return array;           
+//     }   
+// }
+// 8.Задать пустой целочисленный массив длиной 100. С помощью цикла заполнить его значениями 1 2 3 4 5 6 7 8 … 100;
+// public class program{
+//     public static void main(String[] args) {
+//         int [] array = new int[100];
+
+//         int[] result = method(array);
+//         System.out.println(result);   
+//     }
+//     private static int[] method(int[] array) {
+//         int a = 1;
+//         for (int i = 0; i<array.length; i++){
+//             array[i]=a;
+//             a++;
+//         }
+//     return array;           
+//     }       
+// }
+// 9.Задать массив [ 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 ] пройти по нему циклом, и числа меньшие 6 умножить на 2
+
+
