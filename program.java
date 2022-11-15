@@ -120,3 +120,34 @@ import java.util.Scanner;
         
 //     }   
 // }
+// 6.Написать метод, который определяет, является ли год високосным, и возвращает boolean (високосный - true, не високосный - false). 
+// Каждый 4-й год является високосным, кроме каждого 100-го, при этом каждый 400-й – високосный
+
+public class program{
+    public static void main(String[] args) {
+        Scanner iScanner = new Scanner(System.in);
+        Integer n = iScanner.nextInt();
+                    
+        
+        boolean result = method(n);
+        System.out.println(result); 
+    } 
+    private static boolean method(int x) {
+        if (x%400==0){
+            return true;
+        }
+        else{
+            if (x%100==0){
+                return false;
+            }
+            else{
+                if (x%4==0){
+                    return true;
+                }
+                else{
+                    return false;
+                }
+            }             
+        }                    
+    }      
+}
