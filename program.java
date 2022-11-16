@@ -1,6 +1,6 @@
 //1.Вычислить n-ое треугольного число(сумма чисел от 1 до n), n! (произведение чисел от 1 до n)
 
-// import java.util.Scanner;
+import java.util.Scanner;
 //     public class program{
 //         public static void main(String[] args) {
 //             Scanner iScanner = new Scanner(System.in);
@@ -188,6 +188,90 @@
 //     return array;           
 //     }       
 // }
-// 9.Задать массив [ 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 ] пройти по нему циклом, и числа меньшие 6 умножить на 2
+// 9.Задать массив [ 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 ] пройти по нему циклом, и числа меньшие 6 умножить на 2;
+// public class program{
+//         public static void main(String[] args) {
+//             int [] array = { 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 };
+//             int[] result = method(array);
+//             System.out.println(result);   
+//         }
+//         private static int[] method(int[] array) {
+//             for (int i = 0; i<array.length; i++){
+//                 if (array[i] < 6){
+//                     array[i] = array[i]*2;
+//                 }
+//             }
+//         return array;           
+//         }   
+//     }
+// 10.Создать квадратный двумерный целочисленный массив (количество строк и столбцов одинаковое), 
+// и с помощью цикла(-ов) заполнить его диагональные элементы единицами (можно только одну из диагоналей, если обе сложно). 
+// Определить элементы одной из диагоналей можно по следующему принципу: индексы таких элементов равны, 
+// то есть [0][0], [1][1], [2][2], …, [n][n];
+// public class program{
+//     public static void main(String[] args) {
+//         int [][] array = new int[5][5];
+
+//         int[][] result = method(array);
+//         System.out.println(result);
+//     }
+//     private static int[][] method(int[][] array) {
+//         for (int i =0;i<array.length;i++){
+//             for (int j =0;j<array.length;j++){
+//             array[i][j] = 1;        
+//         }
+//     }
+//     return array;           
+//     }   
+// }
+// 11.Написать метод, принимающий на вход два аргумента: len и initialValue, и возвращающий одномерный массив типа int длиной len, 
+// каждая ячейка которого равна initialValue;
+// public class program{
+//     public static void main(String[] args) {
+//         Scanner iScanner = new Scanner(System.in);
+//         Integer len = iScanner.nextInt();
+//         Integer initialValue = iScanner.nextInt();
+
+//         int[] result = method(len,initialValue);
+//         System.out.println(result);
+//     }  
+        
+//     private static int[] method(int x, int y) {
+//         int[] array = new int[x];
+//         for (int i = 0; i<array.length; i++){
+//             array[i] = y;
+//         }
+//     return array;           
+//     }     
+// }    
+// 12.Задать одномерный массив и найти в нем минимальный и максимальный элементы ;
+// public class program{
+//     public static void main(String[] args) {
+//     int [] array = { 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 };
+//     int result = methodmax(array);
+//     System.out.println(result);
+//     int result2 = methodmin(array);
+//     System.out.println(result2);
+//     }
+//     private static int methodmax(int[] array) {
+//         int max = array[0];
+//         for (int i = 0; i<array.length; i++){
+//             if (array[i] > max){
+//                 max = array[i];
+//             }
+//         }
+//     return max;   
+//     }
+//     private static int methodmin(int[] array) {
+//         int min = array[0];
+//         for (int i = 0; i<array.length; i++){
+//             if (array[i] < min){
+//                 min = array[i];
+//             }
+//         }
+//     return min;         
+//     }   
+// }
+
 
 
